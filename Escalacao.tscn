@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmydbu8vminje"]
+
+[ext_resource type="Texture2D" uid="uid://0gup60b4g8om" path="res://assets/grama-bg.png" id="1_0slb4"]
+[ext_resource type="PackedScene" uid="uid://xj1sdlu6c0wr" path="res://scenes/NavBar.tscn" id="2_ii2o4"]
+[ext_resource type="PackedScene" uid="uid://c2at3d7kysf6f" path="res://scenes/ClubHeader.tscn" id="3_ph8qx"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NavBar" parent="." instance=ExtResource("2_ii2o4")]
+custom_minimum_size = Vector2(0, 60)
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_top = 219.0
+offset_right = 1280.0
+offset_bottom = 283.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1280.0
+offset_bottom = 1024.0
+texture = ExtResource("1_0slb4")
+
+[node name="ClubHeader" parent="." instance=ExtResource("3_ph8qx")]
+offset_top = 230.0
+offset_bottom = 380.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+size_flags_horizontal = 3
+localize_numeral_system = false
+color = Color(0.216881, 0.210626, 0.305929, 1)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 193.0
+offset_top = 11.0
+offset_right = 404.0
+offset_bottom = 55.0
+theme_override_font_sizes/font_size = 28
+text = "PRÓXIMO JOGO"

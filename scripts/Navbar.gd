@@ -3,6 +3,7 @@ extends Control
 func _ready():
 	$NavBar/Home.pressed.connect(func(): mudar_tela("res://scenes/Home.tscn"))
 	$NavBar/Perfil.pressed.connect(func(): mudar_tela("res://scenes/Perfil.tscn"))
+	$NavBar/Escalacao.pressed.connect(func(): mudar_tela("res://scenes/Escalacao.tscn"))
 	# ... repita para outros botões
 
 func mudar_tela(caminho):

@@ -17,35 +17,19 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ilu88")
 
-[node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 0
-offset_right = 1280.0
-offset_bottom = 1024.0
-texture = ExtResource("2_svoro")
-
-[node name="ConteudoPrincipal" type="PanelContainer" parent="."]
-custom_minimum_size = Vector2(0, 505)
-layout_mode = 2
-offset_top = 215.0
-offset_right = 1280.0
-offset_bottom = 1025.0
-
 [node name="ClubHeader" parent="." instance=ExtResource("2_d52sk")]
+z_index = 50
 layout_mode = 2
 offset_left = 1.0
 offset_top = 230.0
 offset_right = 1281.0
 offset_bottom = 380.0
 
-[node name="NavBar" parent="." instance=ExtResource("3_nqr1n")]
-custom_minimum_size = Vector2(0, 60)
-layout_mode = 2
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_top = 220.0
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
 offset_right = 1280.0
-offset_bottom = 284.0
+offset_bottom = 1024.0
+texture = ExtResource("2_svoro")
 
 [node name="TickerContainerBackground" type="Panel" parent="."]
 clip_contents = true
@@ -142,6 +126,7 @@ offset_bottom = 320.0
 color = Color(0.192157, 0, 0.337255, 0.176471)
 
 [node name="Label4" type="Label" parent="."]
+layout_mode = 0
 offset_left = 840.0
 offset_top = 544.0
 offset_right = 1051.0
@@ -150,6 +135,7 @@ theme_override_font_sizes/font_size = 28
 text = "PRÓXIMO JOGO"
 
 [node name="Label2" type="Label" parent="."]
+layout_mode = 0
 offset_left = 845.0
 offset_top = 343.0
 offset_right = 1056.0
@@ -158,9 +144,20 @@ theme_override_font_sizes/font_size = 28
 text = "PRÓXIMO JOGO"
 
 [node name="Label3" type="Label" parent="."]
+layout_mode = 0
 offset_left = 241.0
 offset_top = 546.0
 offset_right = 452.0
 offset_bottom = 590.0
 theme_override_font_sizes/font_size = 28
 text = "PRÓXIMO JOGO"
+
+[node name="NavBar" parent="." instance=ExtResource("3_nqr1n")]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_top = 220.0
+offset_right = 1280.0
+offset_bottom = 284.0

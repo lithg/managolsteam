@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://c2at3d7kysf6f"]
+[gd_scene load_steps=6 format=3 uid="uid://c2at3d7kysf6f"]
 
 [ext_resource type="Script" uid="uid://bw6hn17v6iwjg" path="res://scripts/ClubHeader.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://cf0ebk0k5t1" path="res://assets/dynasty.png" id="2_ryyho"]
 [ext_resource type="Texture2D" uid="uid://f7h2mxm161mn" path="res://assets/perfil-icon.png" id="3_8ybph"]
 [ext_resource type="Texture2D" uid="uid://cfi3okbemtsoh" path="res://assets/clan.png" id="3_jt5rf"]
+[ext_resource type="Texture2D" uid="uid://qe6toado0dey" path="res://assets/user.png" id="5_4i1nq"]
 
 [node name="ClubHeader" type="Control"]
 custom_minimum_size = Vector2(1280, 150)
@@ -82,9 +83,11 @@ theme_override_constants/separation = 25
 alignment = 1
 
 [node name="TextureButton" type="TextureButton" parent="Linha1Atalhos3"]
+z_index = 15
 custom_minimum_size = Vector2(25, 25)
 layout_mode = 2
 texture_normal = ExtResource("3_8ybph")
+texture_pressed = ExtResource("5_4i1nq")
 
 [node name="TextureButton2" type="TextureButton" parent="Linha1Atalhos3"]
 custom_minimum_size = Vector2(25, 25)

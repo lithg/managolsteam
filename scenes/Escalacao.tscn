@@ -1,0 +1,646 @@
+[gd_scene load_steps=9 format=3 uid="uid://dtycb5k7w5gnc"]
+
+[ext_resource type="Script" uid="uid://dh3ubkjdj82l8" path="res://scripts/Home.gd" id="1_my4v0"]
+[ext_resource type="Texture2D" uid="uid://0gup60b4g8om" path="res://assets/grama-bg.png" id="2_rjihc"]
+[ext_resource type="PackedScene" uid="uid://c2at3d7kysf6f" path="res://scenes/ClubHeader.tscn" id="3_pyi52"]
+[ext_resource type="PackedScene" uid="uid://xj1sdlu6c0wr" path="res://scenes/NavBar.tscn" id="4_43osu"]
+[ext_resource type="Texture2D" uid="uid://0mdemhydm5pi" path="res://assets/campo.png" id="5_my4v0"]
+[ext_resource type="Script" uid="uid://cjdhq5qtnh8c0" path="res://scripts/Campo.gd" id="6_43osu"]
+[ext_resource type="Texture2D" uid="uid://qe6toado0dey" path="res://assets/user.png" id="6_rjihc"]
+[ext_resource type="Script" uid="uid://dqqr40dpd86c4" path="res://drag_jogador.gd" id="7_pyi52"]
+
+[node name="Home" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -55.0
+offset_bottom = -55.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_my4v0")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+custom_minimum_size = Vector2(1280, 0)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 1024.0
+texture = ExtResource("2_rjihc")
+
+[node name="ConteudoPrincipal" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(0, 505)
+layout_mode = 2
+offset_top = 215.0
+offset_right = 1280.0
+offset_bottom = 1025.0
+
+[node name="ClubHeader" parent="." instance=ExtResource("3_pyi52")]
+layout_mode = 2
+offset_left = 1.0
+offset_top = 230.0
+offset_right = 1281.0
+offset_bottom = 380.0
+
+[node name="NavBar" parent="." instance=ExtResource("4_43osu")]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_top = 220.0
+offset_right = 1280.0
+offset_bottom = 284.0
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 2
+offset_left = 15.0
+offset_top = 270.0
+offset_right = 1255.0
+offset_bottom = 983.0
+size_flags_horizontal = 3
+localize_numeral_system = false
+color = Color(0.216881, 0.210626, 0.305929, 1)
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 34.0
+offset_top = 356.0
+offset_right = -752.0
+offset_bottom = -302.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 5
+theme_override_constants/v_separation = 5
+columns = 9
+
+[node name="Panel" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel2" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel3" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel4" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel5" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel6" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel7" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel8" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel9" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel10" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel11" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel12" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel13" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel14" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel15" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel16" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel17" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel18" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel19" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel20" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel21" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel22" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel23" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel24" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel25" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel26" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel27" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel28" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel29" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel30" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel31" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel32" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel33" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel34" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel35" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel36" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel37" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel38" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel39" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel40" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel41" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel42" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel43" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel44" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel45" type="Panel" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 625.25
+offset_top = 300.0
+offset_right = -405.75
+offset_bottom = -556.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Ocultar zonas do campo"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 152.0
+offset_top = 320.0
+offset_right = 314.0
+offset_bottom = 343.0
+text = "BANCO DE RESERVAS"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 610.0
+offset_right = 529.0
+offset_bottom = 719.0
+
+[node name="Button" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "RESETAR ESCALAÇÃO"
+
+[node name="Button2" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "SALVAR ESCALAÇÃO"
+
+[node name="OptionButton" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 171.0
+offset_top = 725.0
+offset_right = 392.0
+offset_bottom = 756.0
+alignment = 1
+selected = 0
+item_count = 3
+popup/item_0/text = "TÁTICA A"
+popup/item_0/id = 0
+popup/item_1/text = "TÁTICA B"
+popup/item_1/id = 1
+popup/item_2/text = "TÁTICA C"
+popup/item_2/id = 2
+
+[node name="TextureRectCampo" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 557.0
+offset_top = 355.0
+offset_right = 1157.0
+offset_bottom = 1256.0
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("5_my4v0")
+script = ExtResource("6_43osu")
+
+[node name="Jogador" type="TextureRect" parent="." groups=["jogador"]]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 39.0
+offset_top = 357.0
+offset_right = -893.0
+offset_bottom = -195.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("6_rjihc")
+script = ExtResource("7_pyi52")
+
+[node name="Jogador2" type="TextureRect" parent="." groups=["jogador"]]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 95.0
+offset_top = 357.0
+offset_right = -837.0
+offset_bottom = -195.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("6_rjihc")
+script = ExtResource("7_pyi52")
+
+[node name="Jogador3" type="TextureRect" parent="." groups=["jogador"]]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 150.0
+offset_top = 357.0
+offset_right = -782.0
+offset_bottom = -195.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("6_rjihc")
+script = ExtResource("7_pyi52")
+
+[node name="Jogador4" type="TextureRect" parent="." groups=["jogador"]]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 207.0
+offset_top = 357.0
+offset_right = -725.0
+offset_bottom = -195.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("6_rjihc")
+script = ExtResource("7_pyi52")
+
+[node name="Jogador5" type="TextureRect" parent="." groups=["jogador"]]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 263.0
+offset_top = 357.0
+offset_right = -669.0
+offset_bottom = -195.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("6_rjihc")
+script = ExtResource("7_pyi52")
+
+[node name="Jogador6" type="TextureRect" parent="." groups=["jogador"]]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 318.0
+offset_top = 357.0
+offset_right = -614.0
+offset_bottom = -195.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("6_rjihc")
+script = ExtResource("7_pyi52")
+
+[node name="Jogador7" type="TextureRect" parent="." groups=["jogador"]]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 372.0
+offset_top = 357.0
+offset_right = -560.0
+offset_bottom = -195.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("6_rjihc")
+script = ExtResource("7_pyi52")
+
+[node name="Jogador8" type="TextureRect" parent="." groups=["jogador"]]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 428.0
+offset_top = 357.0
+offset_right = -504.0
+offset_bottom = -195.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("6_rjihc")
+script = ExtResource("7_pyi52")
+
+[node name="Jogador9" type="TextureRect" parent="." groups=["jogador"]]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 483.0
+offset_top = 357.0
+offset_right = -449.0
+offset_bottom = -195.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("6_rjihc")
+script = ExtResource("7_pyi52")
+
+[node name="Jogador10" type="TextureRect" parent="." groups=["jogador"]]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 39.0
+offset_top = 408.0
+offset_right = -893.0
+offset_bottom = -144.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("6_rjihc")
+script = ExtResource("7_pyi52")
+
+[node name="Jogador11" type="TextureRect" parent="." groups=["jogador"]]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 95.0
+offset_top = 408.0
+offset_right = -837.0
+offset_bottom = -144.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("6_rjihc")
+script = ExtResource("7_pyi52")
+
+[node name="Jogador12" type="TextureRect" parent="." groups=["jogador"]]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 150.0
+offset_top = 408.0
+offset_right = -782.0
+offset_bottom = -144.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("6_rjihc")
+script = ExtResource("7_pyi52")
+
+[node name="Jogador13" type="TextureRect" parent="." groups=["jogador"]]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 207.0
+offset_top = 408.0
+offset_right = -725.0
+offset_bottom = -144.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("6_rjihc")
+script = ExtResource("7_pyi52")
+
+[node name="Jogador14" type="TextureRect" parent="." groups=["jogador"]]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 263.0
+offset_top = 408.0
+offset_right = -669.0
+offset_bottom = -144.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("6_rjihc")
+script = ExtResource("7_pyi52")
+
+[node name="Jogador15" type="TextureRect" parent="." groups=["jogador"]]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 318.0
+offset_top = 408.0
+offset_right = -614.0
+offset_bottom = -144.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("6_rjihc")
+script = ExtResource("7_pyi52")
+
+[node name="Jogador16" type="TextureRect" parent="." groups=["jogador"]]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 372.0
+offset_top = 408.0
+offset_right = -560.0
+offset_bottom = -144.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("6_rjihc")
+script = ExtResource("7_pyi52")
+
+[node name="Jogador17" type="TextureRect" parent="." groups=["jogador"]]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 428.0
+offset_top = 408.0
+offset_right = -504.0
+offset_bottom = -144.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("6_rjihc")
+script = ExtResource("7_pyi52")
+
+[node name="Jogador18" type="TextureRect" parent="." groups=["jogador"]]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 483.0
+offset_top = 408.0
+offset_right = -449.0
+offset_bottom = -144.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("6_rjihc")
+script = ExtResource("7_pyi52")
+
+[connection signal="pressed" from="HBoxContainer/Button" to="TextureRectCampo" method="_on_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/Button2" to="TextureRectCampo" method="_on_button_2_pressed"]

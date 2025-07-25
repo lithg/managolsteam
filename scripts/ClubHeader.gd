@@ -66,3 +66,19 @@ func formatar_data(data_iso: String) -> String:
 		var dia = partes[2]
 		return dia + "/" + mes + "/" + ano
 	return "Data inválida"
+
+	
+func _on_TextureButton_pressed():
+	get_tree().change_scene_to_file("res://scenes/Escalacao.tscn")	
+
+func _on_TextureButton2_pressed():
+	get_tree().change_scene_to_file("res://scenes/Escalacao.tscn")
+	
+func _on_TextureButton3_pressed():
+	get_tree().change_scene_to_file("res://scenes/Escalacao.tscn")
+	
+func _on_TextureButton4_pressed():
+	get_tree().change_scene_to_file("res://scenes/Escalacao.tscn")
+	
+func _on_TextureButton5_pressed():
+	get_tree().change_scene_to_file("res://scenes/Escalacao.tscn") # ajuste o caminho se estiver diferente

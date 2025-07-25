@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://lup0tx2wupht"]
+[gd_scene load_steps=6 format=3 uid="uid://lup0tx2wupht"]
 
 [ext_resource type="Script" uid="uid://dh3ubkjdj82l8" path="res://scripts/Home.gd" id="1_ilu88"]
 [ext_resource type="PackedScene" uid="uid://c2at3d7kysf6f" path="res://scenes/ClubHeader.tscn" id="2_d52sk"]
 [ext_resource type="Texture2D" uid="uid://0gup60b4g8om" path="res://assets/grama-bg.png" id="2_svoro"]
+[ext_resource type="Script" uid="uid://cjdasx0vcsfqd" path="res://scripts/TickerContainer.gd" id="3_72wqp"]
 [ext_resource type="PackedScene" uid="uid://xj1sdlu6c0wr" path="res://scenes/NavBar.tscn" id="3_nqr1n"]
 
 [node name="Home" type="Control"]
@@ -10,6 +11,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = -55.0
+offset_bottom = -55.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ilu88")
@@ -23,9 +26,9 @@ texture = ExtResource("2_svoro")
 [node name="ConteudoPrincipal" type="PanelContainer" parent="."]
 custom_minimum_size = Vector2(0, 505)
 layout_mode = 2
-offset_top = 217.0
+offset_top = 215.0
 offset_right = 1280.0
-offset_bottom = 722.0
+offset_bottom = 1025.0
 
 [node name="ClubHeader" parent="." instance=ExtResource("2_d52sk")]
 layout_mode = 2
@@ -43,3 +46,121 @@ anchor_bottom = 0.0
 offset_top = 220.0
 offset_right = 1280.0
 offset_bottom = 284.0
+
+[node name="TickerContainerBackground" type="Panel" parent="."]
+clip_contents = true
+layout_mode = 0
+offset_left = 1.0
+offset_top = 280.0
+offset_right = 1281.0
+offset_bottom = 328.0
+
+[node name="LabelResultados" type="Label" parent="TickerContainerBackground"]
+layout_mode = 0
+offset_left = 594.0
+offset_top = 4.0
+offset_right = 717.0
+offset_bottom = 27.0
+theme_override_font_sizes/font_size = 12
+text = "RESULTADOS DO DIA"
+
+[node name="TickerContainer" type="Panel" parent="."]
+clip_contents = true
+layout_mode = 0
+offset_top = 300.0
+offset_right = 1280.0
+offset_bottom = 320.0
+script = ExtResource("3_72wqp")
+
+[node name="TickerLabel" type="Label" parent="TickerContainer"]
+layout_mode = 0
+offset_left = 510.0
+offset_top = 20.0
+offset_right = 798.0
+offset_bottom = 225.0
+text = "Clã Cervejeiros 4 x 0 Bar do Zé FC
+
+
+Real Pneus 2 x 2 Dinamo Leste
+
+
+Gol de última hora decide o campeão
+"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 330.0
+offset_right = 1260.0
+offset_bottom = 530.0
+
+[node name="ColorRect" type="ColorRect" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+localize_numeral_system = false
+color = Color(0.216881, 0.210626, 0.305929, 1)
+
+[node name="Label" type="Label" parent="HBoxContainer/ColorRect"]
+layout_mode = 0
+offset_left = 193.0
+offset_top = 11.0
+offset_right = 404.0
+offset_bottom = 55.0
+theme_override_font_sizes/font_size = 28
+text = "PRÓXIMO JOGO"
+
+[node name="ColorRect2" type="ColorRect" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0.215686, 0.211765, 0.305882, 1)
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 535.0
+offset_right = 1260.0
+offset_bottom = 735.0
+
+[node name="ColorRect" type="ColorRect" parent="HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+localize_numeral_system = false
+color = Color(0.216881, 0.210626, 0.305929, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0.215686, 0.211765, 0.305882, 1)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 300.0
+offset_right = 1260.0
+offset_bottom = 320.0
+color = Color(0.192157, 0, 0.337255, 0.176471)
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 840.0
+offset_top = 544.0
+offset_right = 1051.0
+offset_bottom = 588.0
+theme_override_font_sizes/font_size = 28
+text = "PRÓXIMO JOGO"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 845.0
+offset_top = 343.0
+offset_right = 1056.0
+offset_bottom = 387.0
+theme_override_font_sizes/font_size = 28
+text = "PRÓXIMO JOGO"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 241.0
+offset_top = 546.0
+offset_right = 452.0
+offset_bottom = 590.0
+theme_override_font_sizes/font_size = 28
+text = "PRÓXIMO JOGO"

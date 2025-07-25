@@ -73,6 +73,7 @@ expand_mode = 1
 stretch_mode = 5
 
 [node name="Linha1Atalhos3" type="HBoxContainer" parent="."]
+layout_mode = 0
 offset_left = 979.0
 offset_top = -119.0
 offset_right = 1229.0

@@ -1,0 +1,52 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmmgt1rxb1qdl"]
+
+[ext_resource type="Script" uid="uid://dg3of8t688b00" path="res://scripts/Login.gd" id="1_1hxp7"]
+
+[node name="Login" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1hxp7")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.0
+offset_top = -60.0
+offset_right = 34.0
+offset_bottom = 60.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+custom_minimum_size = Vector2(400, 300)
+layout_mode = 2
+
+[node name="Email" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Email"
+
+[node name="EmailInput" type="LineEdit" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Senha" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Senha"
+
+[node name="SenhaInput" type="LineEdit" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+secret = true
+
+[node name="BotaoLogin" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "ENTRAR"
+
+[node name="MensagemErro" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2

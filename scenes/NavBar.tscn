@@ -1,0 +1,102 @@
+[gd_scene load_steps=4 format=3 uid="uid://xj1sdlu6c0wr"]
+
+[ext_resource type="Script" uid="uid://c70xg6k4pjqpk" path="res://scripts/Navbar.gd" id="1_u2ggo"]
+[ext_resource type="StyleBox" uid="uid://bch5n2aft2wjc" path="res://new_style_box_flat.tres" id="2_d5e2f"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ygvb5"]
+
+[node name="NavBar" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -220.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+script = ExtResource("1_u2ggo")
+
+[node name="NavBarBackground" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 60.0
+color = Color(0.109804, 0.105882, 0.164706, 1)
+
+[node name="BotaoMenuHamburguer" type="Button" parent="NavBarBackground"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="NavBar" type="HBoxContainer" parent="."]
+z_index = 5
+clip_contents = true
+layout_mode = 0
+offset_left = 40.0
+offset_right = 1240.0
+offset_bottom = 60.0
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="Home" type="Button" parent="NavBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+theme_override_styles/normal = ExtResource("2_d5e2f")
+text = "HOME"
+
+[node name="Equipe" type="Button" parent="NavBar"]
+z_index = 6
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+theme_override_styles/normal = ExtResource("2_d5e2f")
+text = "EQUIPE"
+
+[node name="Estruturas" type="MenuButton" parent="NavBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_ygvb5")
+toggle_mode = false
+text = "ESTRUTURAS"
+flat = false
+
+[node name="Campeonatos" type="MenuButton" parent="NavBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "CAMPEONATOS"
+
+[node name="Mercado" type="Button" parent="NavBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = ExtResource("2_d5e2f")
+text = "MERCADO"
+
+[node name="Finanças" type="Button" parent="NavBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = ExtResource("2_d5e2f")
+text = "FINANÇAS"
+
+[node name="Comunidade" type="MenuButton" parent="NavBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "COMUNIDADE"
+
+[node name="Ranking" type="Button" parent="NavBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = ExtResource("2_d5e2f")
+text = "RANKING"
+
+[node name="Loja" type="Button" parent="NavBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = ExtResource("2_d5e2f")
+text = "LOJA"
+
+[node name="Perfil" type="Button" parent="NavBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = ExtResource("2_d5e2f")
+text = "PERFIL"

@@ -1,0 +1,6 @@
+[translation]
+jogar="Jogar"
+login="Entrar"
+ranking="Ranking"
+minha_equipe="Minha Equipe"
+	
